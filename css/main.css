@@ -21,7 +21,7 @@ html, body {
 header {
   height: 300px;
   width: 100%;
-  background: #e3e3e3;
+  background: darkgoldenrod;
 }
 
 
@@ -34,15 +34,15 @@ header {
 }
 
 #column-1 {
-  background: green;
+  background: khaki;
 }
 
 #column-2 {
-  background:red;
+  background: brown;
 }
 
 #column-3 {
-  background: yellow;
+  background: burlywood;
 }
 
 
@@ -51,16 +51,28 @@ header {
 footer {
   width: 100%;
   height: 30px;
-  background: blue;
+  background: coral;
 }
 
 
 /*---------- TABLET ----------*/
 /* Change the background colors below */
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
+
   header {
-    background-color: azure;
+    background-color: darkgoldenrod;
+  }
+
+  .two-cols {
+    width: 50%;
+    float: left;
+  }
+
+  .big-col {
+    width: 100%;
+    height: 640px;
+    float: left;
   }
 
   #column-1 {
@@ -68,12 +80,15 @@ footer {
   }
 
   #column-2 {
-    background-color: blanchedalmond;
+    background-color: brown;
   }
 
   #column-3 {
     background-color: burlywood;
+    width: 50%;
+    height: 100%;
   }
+
 
   footer {
     background-color: coral;
@@ -84,8 +99,13 @@ footer {
 
 /*---------- Desktops ----------*/
 @media (min-width: 1200px) {
+
   header {
     background-color: mediumaquamarine;
+  }
+
+  .col-3 {
+    width: 33.33%;
   }
 
   #column-1 {
